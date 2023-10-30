@@ -1,4 +1,4 @@
-# TinyURL-Style Service - README
+# TinyURL-Style Service
 
 ## Overview
 This project is a Proof of Concept (POC) for a TinyURL-style service that allows users to create short links for long URLs. It includes basic functionality to create, delete, retrieve long URLs, and track the number of times a short URL has been accessed. The service is designed to be run from the command line and does not include a web service or persistent storage.
