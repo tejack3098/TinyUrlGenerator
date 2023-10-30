@@ -21,13 +21,13 @@ namespace TinyUrlGenerator.Services
             else
             {
                 customShortUrl = Constants.ShortUrlPrefix + customShortUrl;
-            }
 
-            if (_urlRepository.ShortUrlExists(customShortUrl))
-            {
-                Console.WriteLine("\nCustom short URL already in use. Please try another one.");
+                if (_urlRepository.ShortUrlExists(customShortUrl))
+                {
+                    Console.WriteLine("\nCustom short URL already in use. Please try another one.");
 
-                return Constants.DuplicateCustomUrl;
+                    return Constants.DuplicateCustomUrl;
+                }
             }
 
             _urlRepository.CreateUrlMapping(customShortUrl, longUrl);
